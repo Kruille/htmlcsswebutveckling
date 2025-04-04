@@ -1,0 +1,39 @@
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "h";
+}
+
+.logohead {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin-left: 0.7rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logosize {
+    width: 58px;
+    height: 32px;
+}
+
+@media (width > 768px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+        "h h h h h h h h";
+    }
+    .logohead {
+        margin-left: 1rem;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .logosize {
+        width: 86px;
+        height: 48px;        
+    }
+}
