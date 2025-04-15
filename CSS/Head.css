@@ -1,39 +1,69 @@
-.header-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "h";
+/* Header.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
 }
 
-.logohead {
+.logo-container {
     display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    margin-left: 0.7rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    align-items: center;
 }
 
 .logosize {
-    width: 58px;
-    height: 32px;
+    width: 46px;
+    height: 26px;
 }
 
-@media (width > 768px) {
-    .header-grid {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas:
-        "h h h h h h h h";
-    }
-    .logohead {
-        margin-left: 1rem;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 
+.header-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header-icon p {
+    margin-top: 2px;
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.header-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3px;
+    margin-top: 3px;    
+}
+  
+.menu-icon span {
+    width: 12px;
+    display: block;    
+    height: 2px;
+    background-color: black;
+    margin: 1px;
+}
+
+@media (min-width: 768px) {
     .logosize {
-        width: 86px;
-        height: 48px;        
+        width: 58px;
+        height: 32px;
     }
 }
