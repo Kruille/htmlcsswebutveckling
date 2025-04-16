@@ -1,0 +1,16 @@
+body {
+    background-color: #F2F2F0;
+}
+.category-box {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 3rem;
+}
+.category-box-icon {    
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
