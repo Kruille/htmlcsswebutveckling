@@ -1,4 +1,3 @@
-/* Header.css */
 header {
     display: flex;
     justify-content: space-between;
@@ -13,10 +12,12 @@ header {
     display: flex;
     align-items: center;
 }
+.logo-container:hover {
+    cursor: pointer;
+}
 
 .logosize {
-    width: 46px;
-    height: 26px;
+    width: 58px;
 }
 
 .nav-icons {
@@ -41,6 +42,9 @@ header {
 .header-icon svg {
     width: 20px;
     height: 20px;
+}
+.header-icon:hover {
+    cursor: pointer;
 }
 
 .menu-icon {
