@@ -1,6 +1,9 @@
 body {
     background-color: #F2F2F0;
 }
+main {
+    padding: 0rem; //
+}
 .welcomeText {
     display: flex;
     flex-direction: column;
@@ -24,6 +27,10 @@ body {
     height: 3rem;
     border-radius: 5px;
 }
+.category-box h2:hover {
+    text-decoration: underline;
+}
+
 .category-box:hover {
     background-color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -39,4 +46,29 @@ body {
     align-items: center;
 }
 
+.article {
+    margin: 1rem;
+}
+
+.article-box{
+  background-color: white;
+  padding: 10px  
+}
+.article-box p {
+    height: 7rem;
+    font-size: 24px;
+    font-family: 'monopol', 'monopol Fallback';   
+}
+.article-box h2 {
+    font-size: 14px; 
+    margin-bottom: 1px; 
+}
+.article img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
