@@ -1,16 +1,42 @@
 body {
     background-color: #F2F2F0;
 }
+.welcomeText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 48px;
+}
+.welcomeText h1 {
+    font-size: 40px;
+    font-family: 'monopol', 'monopol Fallback';   
+    margin-bottom: 35px; 
+}
 .category-box {
     background-color: white;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
     height: 3rem;
+    border-radius: 5px;
 }
-.category-box-icon {    
+.category-box:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.category-box img {  
     margin-left: 1rem;
     margin-right: 0.5rem;
+    display: flex;
+    justify-content: space-between;
 }
+.category-box div{
+    display: flex;
+    align-items: center;
+}
+
+
