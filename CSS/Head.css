@@ -3,9 +3,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-bottom: 1px solid #e5e5e5;
-    height: 60px;
+    height: 65px;
 }
 
 .logo-container {
@@ -21,22 +21,22 @@ header {
 }
 
 .nav-icons {
+    height: 24px;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .header-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
 }
 
 .header-icon p {
-    margin-top: 2px;
+    margin-top: 1px;
     flex: 1;
-    margin-bottom: 0;
+    font-size: 14px;
 }
 
 .header-icon svg {
