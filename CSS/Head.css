@@ -16,24 +16,77 @@
 
 .logosize {
     width: 58px;
-    height: 32px;
 }
 
-@media (width > 768px) {
-    .header-grid {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas:
-        "h h h h h h h h";
-    }
-    .logohead {
-        margin-left: 1rem;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-icons p {
+    margin-top: 1px;
+    font-size: 14px;
+    flex-wrap: nowrap;
+}
 
+.header-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-icon-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-icons:hover {
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 3px;    
+}
+  
+.menu-icon span {
+    width: 12px;
+    display: block;    
+    height: 2px;
+    background-color: black;
+    margin: 1px;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 4rem;
+    }
+    .logo-search{
+        display: flex;
+    }
     .logosize {
         width: 86px;
-        height: 48px;        
+        height: 48px;
+    }
+    .header-icon-search {
+        display: none;
+    }
+    .header-search-box {
+        display: flex;
+        background-color: blue;
+        height: 48px;
+        margin-left: 1rem;
+        /* Replace fixed width with responsive width */
+        width: clamp(150px, 90vw, 400px);
+        /* 
+           This uses clamp() to create a fluid width that:
+           - Has a minimum of 150px
+           - Scales based on viewport width (30vw)
+           - Maxes out at the original 330px
+        */
     }
 }
