@@ -1,73 +1,39 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 1rem;
-    border-bottom: 1px solid #e5e5e5;
-    height: 65px;
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "h";
 }
 
-.logo-container {
+.logohead {
     display: flex;
-    align-items: center;
-}
-.logo-container:hover {
-    cursor: pointer;
+    flex-direction: row;
+    vertical-align: middle;
+    margin-left: 0.7rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .logosize {
     width: 58px;
+    height: 32px;
 }
 
-.nav-icons {
-    height: 24px;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
+@media (width > 768px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+        "h h h h h h h h";
+    }
+    .logohead {
+        margin-left: 1rem;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
 
-.header-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-icon p {
-    margin-top: 1px;
-    flex: 1;
-    font-size: 14px;
-}
-
-.header-icon svg {
-    width: 20px;
-    height: 20px;
-}
-.header-icon:hover {
-    cursor: pointer;
-}
-
-.menu-icon {
-    width: 20px;
-    height: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5px;
-    margin-top: 3px;    
-}
-  
-.menu-icon span {
-    width: 12px;
-    display: block;    
-    height: 2px;
-    background-color: black;
-    margin: 1px;
-}
-
-@media (min-width: 768px) {
     .logosize {
-        width: 58px;
-        height: 32px;
+        width: 86px;
+        height: 48px;        
     }
 }
