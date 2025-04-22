@@ -21,10 +21,14 @@ header {
 }
 
 .nav-icons {
-    height: 24px;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+.nav-icons p {
+    margin-top: 1px;
+    font-size: 14px;
+    flex-wrap: nowrap;
 }
 
 .header-icon {
@@ -32,18 +36,12 @@ header {
     flex-direction: column;
     align-items: center;
 }
-
-.header-icon p {
-    margin-top: 1px;
-    flex: 1;
-    font-size: 14px;
+.header-icon-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.header-icon svg {
-    width: 20px;
-    height: 20px;
-}
-.header-icon:hover {
+.nav-icons:hover {
     cursor: pointer;
 }
 
@@ -66,8 +64,31 @@ header {
 }
 
 @media (min-width: 768px) {
+    header {
+        padding: 1rem 4rem;
+    }
+    .logo-search{
+        display: flex;
+    }
     .logosize {
-        width: 58px;
-        height: 32px;
+        width: 86px;
+        height: 48px;
+    }
+    .header-icon-search {
+        display: none;
+    }
+    .header-search-box {
+        display: flex;
+        background-color: blue;
+        height: 48px;
+        margin-left: 1rem;
+        /* Replace fixed width with responsive width */
+        width: clamp(150px, 90vw, 400px);
+        /* 
+           This uses clamp() to create a fluid width that:
+           - Has a minimum of 150px
+           - Scales based on viewport width (30vw)
+           - Maxes out at the original 330px
+        */
     }
 }
