@@ -104,6 +104,7 @@ header {
         border-radius: 24px;
         height: 48px;
         margin-left: 1rem;
+        margin-right: 1rem;
         width: clamp(150px, 50vw, 380px);
         /* 
            This uses clamp() to create a fluid width that:
@@ -131,6 +132,8 @@ header {
 @media (min-width: 1024px) {
     header {
         height: 81px;
+        display: flex;
+        justify-content: center;
     }
     .search-div {
         margin-top: 0px;
@@ -143,6 +146,7 @@ header {
     .header-search-box {
         display: flex;
         flex-direction: row;
+        width: clamp(150px, 50vw, 420px);
     }
     .green-search-button {
         display: flex;
@@ -173,4 +177,26 @@ header {
         align-items: center;
     }
     
+}
+
+@media (min-width: 1207px) {
+    .header-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5px;
+    }
+    .header-icon-openhours {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5px;
+    }
+    .header-icon-customerService {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5px;
+    }
+
 }
