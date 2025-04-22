@@ -1,17 +1,19 @@
-.header-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "h";
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    height: 65px;
 }
 
-.logohead {
+.logo-container {
     display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    margin-left: 0.7rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    align-items: center;
+}
+.logo-container:hover {
+    cursor: pointer;
 }
 
 .logosize {
