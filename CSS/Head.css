@@ -9,10 +9,7 @@ header {
     column-gap:  1rem;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
+
 .logo-container:hover {
     cursor: pointer;
 }
@@ -23,8 +20,9 @@ header {
 
 .nav-icons {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .nav-icons p {
     margin-top: 1px;
@@ -41,6 +39,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.header-search-box {
+    display: none;
 }
 .nav-icons:hover {
     cursor: pointer;
@@ -67,6 +68,7 @@ header {
 @media (min-width: 768px) {
     header {
         padding: 1rem 4rem;
+        height: 72px
     }
     .logo-search{
         display: flex;
@@ -75,16 +77,20 @@ header {
         width: 86px;
         height: 48px;
     }
+    .logo-container {
+        min-width: 86px;
+    }
     .header-icon-search {
         display: none;
     }
     .header-search-box {
         display: flex;
-        background-color: blue;
+        flex-direction: column;
+        background-color: #F2F2F0;
+        border-radius: 24px;
         height: 48px;
         margin-left: 1rem;
-        /* Replace fixed width with responsive width */
-        width: clamp(150px, 90vw, 400px);
+        width: clamp(150px, 50vw, 380px);
         /* 
            This uses clamp() to create a fluid width that:
            - Has a minimum of 150px
@@ -92,4 +98,47 @@ header {
            - Maxes out at the original 330px
         */
     }
+    .search-div {
+        display: flex;
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 16px;
+        margin-right: -8px;
+    }
+    .green-search-button {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        height: 81px;
+    }
+    .search-div {
+        margin-top: 0px;
+        margin-left: 26px;
+        margin-right: -8px;
+    }
+    .search-div img {
+        display: none;
+    }
+    .header-search-box {
+        display: flex;
+        flex-direction: row;
+    }
+    .green-search-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #095741;
+        color: white;
+        border-radius: 24px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin: 4px;
+        gap: 5px;
+    }       
+    
 }

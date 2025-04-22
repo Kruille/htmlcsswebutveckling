@@ -2,7 +2,7 @@ body {
     background-color: #F2F2F0;
 }
 main {
-    padding: 1rem; /*sätta global padding istället för individuellt på allt?*/
+    padding: 1rem;
 }
 .welcomeText {
     display: flex;
