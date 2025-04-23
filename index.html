@@ -1,143 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/CSS/Head.css">
-    <link rel="stylesheet" href="/CSS/Body.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/Head.css" />
+    <link rel="stylesheet" href="/CSS/Body.css" />
+    <link rel="stylesheet" href="/CSS/Footer.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Document</title>
-</head>
-<body>
-   <header>
-    <div class="header-group">
-    <div class="logo-search">
-        <div class="logo-container">
+  </head>
+  <body>
+    <header>
+      <div class="header-group">
+        <div class="logo-search">
+          <div class="logo-container">
             <picture>
-                <img class="logosize" src="/images/logo.svg" alt="Logga">
+              <img class="logosize" src="/images/logo.svg" alt="Logga" />
             </picture>
-        </div>
-    
-        <div class="header-search-box">
+          </div>
+
+          <div class="header-search-box">
             <div class="search-div">
-                <img src="images/IconsHeader/searchIcon.svg" style="height: 24px;margin-right: 5px;">
-                <input class="search-input" type="text" placeholder="Sök dryck, maträtt..." >
+              <img
+                src="images/IconsHeader/searchIcon.svg"
+                style="height: 24px; margin-right: 5px"
+              />
+              <input
+                class="search-input"
+                type="text"
+                placeholder="Sök dryck, maträtt..."
+              />
             </div>
             <button class="green-search-button">
-                <img src="images/IconsHeader/searchIconWhite.svg" style="height: 24px;">
-                <p><strong>Sök</strong></p>
+              <img
+                src="images/IconsHeader/searchIconWhite.svg"
+                style="height: 24px"
+              />
+              <p><strong>Sök</strong></p>
             </button>
-                
+          </div>
         </div>
-    </div>    
-        <div class="nav-icons">            
-            <div class="header-icon-search">
-                <img src="images/IconsHeader/searchIcon.svg" style="height: 20px;">
-                <p>Sök</p>
+        <div class="nav-icons">
+          <div class="header-icon-search">
+            <img src="images/IconsHeader/searchIcon.svg" style="height: 20px" />
+            <p>Sök</p>
+          </div>
+          <div class="header-icon">
+            <img src="images/IconsHeader/LogInIcon.svg" style="height: 20px" />
+            <p>Logga in</p>
+          </div>
+          <div class="header-icon-openhours">
+            <img src="images/IconsHeader/OpenHours.svg" style="height: 20px" />
+            <p>Öppettider</p>
+          </div>
+          <div class="header-icon-customerService">
+            <img
+              src="images/IconsHeader/CustomerService.svg"
+              style="height: 20px"
+            />
+            <p>Kundservice</p>
+          </div>
+          <div class="header-icon">
+            <img src="images/IconsHeader/basketIcon.svg" style="height: 20px" />
+            <p>Varukorg</p>
+          </div>
+          <div style="height: 40px" class="header-icon-menu">
+            <div class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="header-icon">
-                <img src="images/IconsHeader/LogInIcon.svg" style="height: 20px;">
-                <p>Logga in</p>
-            </div>
-            <div class="header-icon-openhours">
-                <img src="images/IconsHeader/OpenHours.svg" style="height: 20px;">
-                <p>Öppettider</p>
-            </div>
-            <div class="header-icon-customerService">
-                <img src="images/IconsHeader/CustomerService.svg" style="height: 20px;">
-                <p>Kundservice</p>
-            </div>
-            <div class="header-icon">
-                <img src="images/IconsHeader/basketIcon.svg" style="height: 20px;">
-                <p>Varukorg</p>
-            </div>
-            <div style="height: 40px;" class="header-icon-menu">
-                <div class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>                    
-                </div>
-                <p>Meny</p>
-            </div>
+            <p>Meny</p>
+          </div>
         </div>
-    </div>
+      </div>
     </header>
     <nav class="nav-bar">
-        <ul class="nav-list">
-            <li><p>Nytt</p></li>
-            <li><p>Vin</p></li>
-            <li><p>Öl</p></li>
-            <li><p>Sprit</p></li>
-            <li><p>Cider & Blandryck</p></li>
-            <li><p>Alkholfritt</p></li>
-            <li><p>Hållbaradrycker</p></li>
-            <li><p>dryck & Mat</p></li>
-            <li><p>Alkohol & Hälsa</p></li>            
-        </ul>
+      <ul class="nav-list">
+        <li><p>Nytt</p></li>
+        <li><p>Vin</p></li>
+        <li><p>Öl</p></li>
+        <li><p>Sprit</p></li>
+        <li><p>Cider & Blandryck</p></li>
+        <li><p>Alkholfritt</p></li>
+        <li><p>Hållbaradrycker</p></li>
+        <li><p>dryck & Mat</p></li>
+        <li><p>Alkohol & Hälsa</p></li>
+      </ul>
     </nav>
     <main>
-        <section class="welcomeText">
-            <p>VÄLKOMMEN TILL</p>
-            <h1>Systembolaget</h1>
+      <section class="welcomeText">
+        <p>VÄLKOMMEN TILL</p>
+        <h1>Systembolaget</h1>
+      </section>
+      <div class="category-container">
+        <section class="category-box">
+          <div>
+            <img src="images/IconsBody/1.svg" alt="Se hela sortimentet" />
+            <h2>Se hela sortimentet</h2>
+          </div>
+          <img src="images/IconsBody/arrow.svg" />
         </section>
-        <div class="category-container">
-            <section class="category-box">
-                <div>
-                    <img src="images/IconsBody/1.svg">
-                    <h2>Se hela sortimentet</h2>
-                </div>                
-                <img src="images/IconsBody/arrow.svg">                
-            </section>
-    
-            <section class="category-box">
-                <div>
-                    <img src="images/IconsBody/2.svg">
-                    <h2>Hitta varor i butik</h2>
-                </div>            
-                <img src="images/IconsBody/arrow.svg">                
-            </section>
-    
-            <section class="category-box">
-                <div>
-                    <img src="images/IconsBody/3.svg">
-                    <h2>Handla online</h2>
-                </div>                
-                <img src="images/IconsBody/arrow.svg">                
-            </section>
-    
-            <section class="category-box">
-                <div>
-                    <img src="images/IconsBody/4.svg">
-                    <h2>Min smakprofil</h2>
-                </div>                
-                <img src="images/IconsBody/arrow.svg">                
-            </section>
-        </div>  
-        <div class="article-container">
-            <div class="article-group">
-                <div class="img-container">
-                    <img src="images/dryckesplaneraren-kampanjbild-3.png" alt="">
-                </div>
-                <article class="article-box">
-                    <h2>Dryckesplaneraren</h2>
-                    <p>Hur mycket går det åt till finmiddagen?</p>                
-                </article>
-            </div>
-            <div class="article-box-openhours">
-                <p>ÖPPETTIDER BUTIK</p>
-                <H2>Öppettider i påsk</H2>
-                <p><strong>Tor 17/4</strong> skärtorsdag: Ordinarie öppettid</p>
-                <p><strong>Fre 18/4</strong> långfredag: Stängt</p>
-                <p><strong>Lör 19/4</strong> påskafton: Öppet till 15:00</p>
-                <p><strong>Sön 20/4</strong> påskdagen: Stängt</p>
-                <p><strong>Mån 21/4</strong> annandag påsk: Stängt</p>
-                <p class="sok-butik">Sök din butik här</p>
-            </div>
+
+        <section class="category-box">
+          <div>
+            <img src="images/IconsBody/2.svg" alt="Hitta varor i butik" />
+            <h2>Hitta varor i butik</h2>
+          </div>
+          <img src="images/IconsBody/arrow.svg" />
+        </section>
+
+        <section class="category-box">
+          <div>
+            <img src="images/IconsBody/3.svg" alt="Handla online" />
+            <h2>Handla online</h2>
+          </div>
+          <img src="images/IconsBody/arrow.svg" />
+        </section>
+
+        <section class="category-box">
+          <div>
+            <img src="images/IconsBody/4.svg" alt="Min smakprofil" />
+            <h2>Min smakprofil</h2>
+          </div>
+          <img src="images/IconsBody/arrow.svg" />
+        </section>
+      </div>
+      <div class="article-container">
+        <div class="article-group">
+          <div class="img-container">
+            <img src="images/dryckesplaneraren-kampanjbild-3.png" alt="" />
+          </div>
+          <article class="article-box">
+            <h2>Dryckesplaneraren</h2>
+            <p>Hur mycket går det åt till finmiddagen?</p>
+          </article>
         </div>
+        <div class="article-box-openhours">
+          <p>ÖPPETTIDER BUTIK</p>
+          <h2>Öppettider i påsk</h2>
+          <p><strong>Tor 17/4</strong> skärtorsdag: Ordinarie öppettid</p>
+          <p><strong>Fre 18/4</strong> långfredag: Stängt</p>
+          <p><strong>Lör 19/4</strong> påskafton: Öppet till 15:00</p>
+          <p><strong>Sön 20/4</strong> påskdagen: Stängt</p>
+          <p><strong>Mån 21/4</strong> annandag påsk: Stängt</p>
+          <p class="sok-butik">Sök din butik här</p>
+        </div>
+      </div>
     </main>
     <footer>
+      <div class="footer-container-top">
+        <div class="footer-section1-size">
+          <div class="footer-article-container">
+            <div class="footer-article">
+              <img
+                class="footer-img"
+                alt="Vi låter bli annonsering för att du inte ska köpa mer än du tänkt eller lockas till butik."
+                src="/images/imgfooter/speaker.svg"
+              />
+            </div>
+            <div class="footer-article">
+              <h3 class="footer-h3">Annonsfritt</h3>
+              <p class="footer-p">
+                Vi låter bli annonsering för att du inte ska köpa mer än du
+                tänkt eller lockas till butik.
+              </p>
+            </div>
+          </div>
+          <div class="footer-article-container">
+            <div class="footer-article">
+              <img
+                class="footer-img"
+                alt="Vi låter bli annonsering för att du inte ska köpa mer än du tänkt eller lockas till butik."
+                src="/images/imgfooter/speaker.svg"
+              />
+            </div>
+            <div class="footer-article">
+              <h3 class="footer-h3">Personligt</h3>
+              <p class="footer-p">
+                Vi ger dig personliga råd om dryck, med eller utan alkohol, i
+                både chatt och butik.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-article-container">
+            <div class="footer-article">
+              <img
+                class="footer-img"
+                alt="Vi låter bli annonsering för att du inte ska köpa mer än du tänkt eller lockas till butik."
+                src="/images/imgfooter/speaker.svg"
+              />
+            </div>
+            <div class="footer-article">
+              <h3 class="footer-h3">Märkesneutralt</h3>
+              <p class="footer-p">
+                Inköpsvillkoren är lika för alla leverantörer och vi säljer
+                alkohol utan vinstintresse.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="footer-container-middle">
+          <div class="footer-section2-size">
+            <div class="footer-article-container-middle">
+                <h3 class="footer-h3-middle">Beställ & Handla</h3>
+                <p class=" footer-p-middle">Öppettider</p>
+                <p class=" footer-p-middle">Beställ hemleverans</p>
+                <p class=" footer-p-middle">Beställ till butik</p>
+                <p class="footer-p, footer-p-middle">Beställ till ombud</p>
+                <p class="footer-p, footer-p-middle">Leveranstid, betalning och frakt</p>
+                <p class="footer-p, footer-p-middle">Dryckesauktioner</p>
+                <p class="footer-p, footer-p-middle">Dryckesprovning</p>
+                <p class="footer-p, footer-p-middle">Om webblanseringar</p>
+                <p class="footer-p, footer-p-middle">Presentkort</p>
+                <p class="footer-p, footer-p-middle">Retur, ångerrätt och reklamation</p>
+                <p class="footer-p, footer-p-middle">Privatimport</p>
+                <p class="footer-p, footer-p-middle">Våra märkningar</p>
+                <p class="footer-p, footer-p-middle">Vårt presentsortiment</p>
+            </div>
+            <div class="footer-article-container-middle">
+                <h3 class="footer-h3-middle">Kontakt</h3>
+                <p class="footer-p, footer-p-middle">Vanliga frågor</p>
+                <p class="footer-p, footer-p-middle">Butiker & Ombud</p>
+                <p class="footer-p, footer-p-middle">Butiker per län</p>
+                <p class="footer-p, footer-p-middle">Ombud per län</p>
+                <p class="footer-p, footer-p-middle">Bli ombud</p>
+                <p class="footer-p, footer-p-middle">Bli leverantör</p>
+                <p class="footer-p, footer-p-middle">Jobba hos oss</p>
+                <p class="footer-p, footer-p-middle">Pressrum</p>
+                <p class="footer-p, footer-p-middle">Leverantörsportalen</p>
+                <p class="footer-p, footer-p-middle">Whistleblowing</p>
+            </div>
+            <div class="footer-article-container-middle">
+                <h3 class="footer-h3-middle">Om oss</h3>
+                <p class="footer-p, footer-p-middle">Systembolagets uppdrag</p>
+                <p class="footer-p, footer-p-middle">Om Systembolaget</p>
+                <p class="footer-p, footer-p-middle">Hållbarhet</p>
+                <p class="footer-p, footer-p-middle">Ansvarsredovisning</p>
+                <p class="footer-p, footer-p-middle">Systembolagets historia</p>
+                <p class="footer-p, footer-p-middle">English</p>
+                <p class="footer-p, footer-p-middle">Varför har vi stängt?</p>
+                
+            </div>
+        </div>
+      </div>
+      
     </footer>
-</body>
+  </body>
 </html>
