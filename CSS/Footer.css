@@ -24,7 +24,10 @@
 .footer-article-container{
     flex: 1;
   display: flex;
-  margin-left: 0px;
+  align-items: center;
+
+
+
 
 }
 .footer-article-container-middle{
@@ -42,36 +45,37 @@
     margin-bottom: 8px;
     align-self: flex-start;
     margin-top: 0px;
+    
 }
 
 .footer-section1-size{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 18px;
-    max-width: 1208px;
+    gap: 13px;
+    max-width: 1460px;
     margin: 0 auto;
-    padding: 40px 40px;
+    padding: 4rem 4rem;
+    width: 100%;
+    
 
 }
 .footer-section2-size{
-
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   gap: 32px;
   width: 100%;
   max-width: 1208px;
   margin: 0 auto;
-  padding: 40px 1rem;
+  padding: 4rem 4rem;
 }
 
 .footer-img{
     height: 60px;
     width: 60px;
-    flex-grow: 1;
+
     inset:0px;
-    margin-right: 24px;
+    margin-right: 21px;
     color: transparent;
 }
 .footer-h3{
@@ -99,28 +103,36 @@
     margin: 0;
     font-family: 'interVariable', 'interVariable Fallback';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.13px;
     max-width: 200px;
     text-size-adjust: 100%;
 }
 .footer-p-middle{
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-bottom: 8px;
     font-family: 'interVariable', 'interVariable Fallback';
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.13px;
-    max-width: 200px;
+    max-width: 230px;
     text-size-adjust: 100%;
     font-feature-settings: 'calt' 1, 'cv05' 1, 'cv10' 1, 'ss07' 1;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
     text-size-adjust: 100%;
-
-    
 }
+.inline-icon {
+    flex-grow: 1;
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
 @media (max-width: 767px) {
     .footer-article-container-middle {
       flex: 1 1 100%;
@@ -136,4 +148,4 @@
     min-width: 80px;
     color: transparent;
     }
-  }
+}
