@@ -125,6 +125,7 @@
     }
     .footer-article-container {
         flex: 1 1 100%;
+        justify-content: center;
       }
   }
   @media (width > 767px) {
