@@ -27,6 +27,15 @@
 }
 
 
+.footer-container-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    padding: 2rem 1rem;
+}
 .footer-article-container{
     flex: 1;
     display: flex;
@@ -38,13 +47,25 @@
     flex-direction: column;
     width: auto;
 }
+.footer-article-container-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+}
 .footer-article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 8px;
     align-self: flex-start;
-    margin-top: 0px;    
+    margin-top: 0px;
+}
+.footer-article-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    min-width: 200px;
 }
 
 .footer-section1-size{
@@ -57,20 +78,26 @@
     width: 100%;
 }
 .footer-section2-size{
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 32px;
-  width: 100%;
-  max-width: 1208px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+    max-width: 1208px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+.footer-section3-size{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1208px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .footer-img{
     height: 60px;
     width: 60px;
-
     inset:0px;
     margin-right: 21px;
     color: transparent;
@@ -92,13 +119,33 @@
     font-size: 20px;
     line-height: 24px;
     align-items: center;
-
+}
+.footer-h3-bottom{    
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 .inline-div {
     display: flex;
     align-items: center;
 }
   
+.footer-p-bottom{
+    font-size: 16px;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+.footer-bottom-signature{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 16px;
+    opacity: 0.4;
+    border-top: 1px solid #ffffff;
+
+}
 .inline-icon {
     display: block;
     height: 16px;
@@ -129,5 +176,10 @@
     .footer-section2-size{
         padding: 2rem 4rem;
         gap: 8px;
+    }
+    .footer-article-bottom{
+        flex-direction: column;
+        border-right: #ffffff 1px solid;
+
     }
 }
