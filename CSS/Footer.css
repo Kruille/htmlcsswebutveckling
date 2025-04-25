@@ -22,9 +22,9 @@
   padding-right: 1rem;
 }
 .footer-article-container{
-    flex: 0 1 calc(33.33% - 21.33px); /* Tre kolumner med mellanrum */
+    flex: 1;
   display: flex;
-  gap: 1rem;
+  align-items: center;
 }
 .footer-article-container-middle{
     flex: 0 1 calc(33.33% - 21.33px); /* Tre kolumner med mellanrum (32px / 1.5) */
@@ -41,36 +41,35 @@
     margin-bottom: 8px;
     align-self: flex-start;
     margin-top: 0px;
+    
 }
 
 .footer-section1-size{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 32px;
-    max-width: 1208px;
+    gap: 20px;
+    max-width: 1460px;
     margin: 0 auto;
-    padding: 40px 1rem;
-
+    padding: 2rem 4rem;
+    width: 100%;
 }
 .footer-section2-size{
-
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   gap: 32px;
   width: 100%;
   max-width: 1208px;
   margin: 0 auto;
-  padding: 40px 1rem;
+  padding: 2rem 1rem;
 }
 
 .footer-img{
     height: 60px;
     width: 60px;
-    flex-grow: 1;
+
     inset:0px;
-    margin-right: 24px;
+    margin-right: 21px;
     color: transparent;
 }
 .footer-h3{
@@ -93,6 +92,8 @@
 
 }
 .footer-p{
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     font-family: 'interVariable', 'interVariable Fallback';
     font-weight: 400;
@@ -101,37 +102,55 @@
     letter-spacing: -0.13px;
     max-width: 200px;
     text-size-adjust: 100%;
-    margin:0;
 }
 .footer-p-middle{
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-bottom: 8px;
     font-family: 'interVariable', 'interVariable Fallback';
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.13px;
-    max-width: 200px;
+    max-width: 230px;
     text-size-adjust: 100%;
     font-feature-settings: 'calt' 1, 'cv05' 1, 'cv10' 1, 'ss07' 1;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
     text-size-adjust: 100%;
-
-    
 }
+.inline-icon {
+    flex-grow: 1;
+    position: middle;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+  }
 @media (max-width: 767px) {
     .footer-article-container-middle {
       flex: 1 1 100%;
     }
     .footer-article-container {
         flex: 1 1 100%;
+        justify-content: center;
       }
   }
   @media (width > 767px) {
     .footer-img{
-    height: 100%;
-    width: 100%;
-    inset: 0px;
+    height: 80px;
+    min-width: 80px;
     color: transparent;
     }
-  }
+    .footer-p{
+        font-size: 19px;
+    }
+    .footer-section1-size{
+        padding: 2rem 4rem;
+        gap: 8px;
+    }
+    .footer-section2-size{
+        padding: 2rem 4rem;
+        gap: 8px;
+    }
+}
