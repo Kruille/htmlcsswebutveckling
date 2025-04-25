@@ -67,16 +67,18 @@
     width: 100%;
     max-width: 1208px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
 }
 
 
 .footer-img{
+    display: block;
     height: 60px;
     width: 60px;
     inset:0px;
     margin-right: 21px;
     color: transparent;
+    min-width: 60px;
 }
 .footer-h3{
     margin: 0;
@@ -123,7 +125,7 @@
 }
   
 .footer-section-3{
-    background-color: #000000;
+    background-color: #252525;
     color: white;
     width: 100%;
 }
@@ -131,10 +133,10 @@
     flex-direction: column;    
     display: flex;
     justify-content: center;
+    padding : 0rem 1rem;
     margin-top: 2rem;
-    margin-left: 1rem;
     line-height: 2;
-    font-size: 19px;
+    font-size: 17px;
     
 }
 .footer-section-3-container h3{
@@ -144,10 +146,15 @@
     margin-bottom: 8px;
 }
 .footer-section-3-container span{
-display:flex;
-align-items: center;
+    display:flex;
+    align-items: center;
+    margin-right: 7px;
 
 }
+.footer-section-3-container p{
+    margin-right: 25px;
+}
+
 .footer-section-3-border{
     border-top: 1px solid #ffffff;
     width: 100%;
@@ -190,16 +197,26 @@ align-items: center;
         padding: 2rem 4rem;
         gap: 8px;
     }
+
+    .footer-section-3 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
     
     .footer-section-3-container{
         flex-direction: row;
-        
     }
+    
+    .footer-section-3-article {
+        flex-grow: 1;
+        max-width: 350px;
+    }    
+    
     .footer-section-3-border{
-        border-top: none;         /* Ta bort horisontell */
-        border-left: 1px solid #ffffff; /* Lägg till vertikal */
-        width: 1px;               /* Smal linje */           /* Justera höjd efter behov */
-        margin: 24px;     /* Centrerad */
+        border-top: none;
+        border-left: 1px solid #ffffff;
+        width: 1px; 
+        margin: 24px;
         opacity: 0.4;
 }
     .footer-flex-change-flex{
