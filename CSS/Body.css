@@ -50,8 +50,6 @@ main {
 .category-box img {  
     margin-left: 1rem;
     margin-right: 0.5rem;
-    display: flex;
-    justify-content: space-between;
 }
 .category-box div{
     display: flex;
@@ -78,8 +76,7 @@ main {
     object-fit: cover;
     object-position: center 25%;
     display: block;
-    transition: transform 0.3s ease;
-    color: transparent;
+    transition: transform 0.3s ease;    
 }
 
 .article-group:hover .img-container img {
