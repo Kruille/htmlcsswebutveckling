@@ -38,7 +38,8 @@ Krav för väl godkänt:
 2. [X] Elementen på sidan skall vara fullt responsiva - alltså matcha orginalhemsidans  responsivitet 
 3. [X] Det ska finnas flera skärmdumpar på orginalhemsidans utseende för olika  skärmstorlekar - minst en för mobil, en för tablet, och en för desktop. 
 4. [X] Färger, storlekar och avstånd skall matcha orignalhemsidans 
-5. [ ] Ett ikonset (css fil från FontAwesome eller MaterialUI) ska laddas in i head taggen,  ikoner från filen skall sedan användas på minst ett ställe i html-koden. 6. Koden skall vara logiskt strukturerad med tydliga kommentarer för dess uppbyggnad 
+5. [x] Ett ikonset (css fil från FontAwesome eller MaterialUI) ska laddas in i head taggen,  ikoner från filen skall sedan användas på minst ett ställe i html-koden. 
+6. [ ] Koden skall vara logiskt strukturerad med tydliga kommentarer för dess uppbyggnad 
 
 Mini-ordlista: 
 • Responsivitet - beskriver en sidas förmåga att anpassa sig efter skärmstorlekar och  enheter. 

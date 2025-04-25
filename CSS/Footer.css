@@ -26,8 +26,6 @@
     font-size: 17px;
 }
 
-
-
 .footer-article-container{
     flex: 1;
     display: flex;
@@ -196,10 +194,10 @@ align-items: center;
         
     }
     .footer-section-3-border{
-        border-top: none;         /* Ta bort horisontell */
-        border-left: 1px solid #ffffff; /* Lägg till vertikal */
-        width: 1px;               /* Smal linje */           /* Justera höjd efter behov */
-        margin: 24px;     /* Centrerad */
+        border-top: none; 
+        border-left: 1px solid #ffffff;
+        width: 1px; 
+        margin: 24px;
         opacity: 0.4;
 }
     .footer-flex-change-flex{
