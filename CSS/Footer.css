@@ -50,9 +50,9 @@
 .footer-article-container-bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
     width: 100%;
 }
+
 .footer-article{
     display: flex;
     flex-direction: column;
@@ -144,7 +144,10 @@
     font-size: 16px;
     opacity: 0.4;
     border-top: 1px solid #ffffff;
-
+    width: 100%;
+}
+.bottom-border{
+    border: none;
 }
 .inline-icon {
     display: block;
@@ -180,6 +183,9 @@
     .footer-article-bottom{
         flex-direction: column;
         border-right: #ffffff 1px solid;
-
+    }
+    .bottom-border{
+        border-left: #ffffff 1px solid;
+        border-right: #ffffff 1px solid;
     }
 }
