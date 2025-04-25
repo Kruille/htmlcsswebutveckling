@@ -48,6 +48,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .header-icon-openhours {
     display: none;
@@ -83,7 +84,7 @@ header {
 @media (min-width: 768px) {
     header {
         padding: 1rem 4rem;
-        height: 72px
+        height: 72px;
     }
     .logo-search{
         display: flex;
@@ -106,13 +107,7 @@ header {
         height: 48px;
         margin-left: 1rem;
         margin-right: 1rem;
-        width: clamp(150px, 50vw, 380px);
-        /* 
-           This uses clamp() to create a fluid width that:
-           - Has a minimum of 150px
-           - Scales based on viewport width (30vw)
-           - Maxes out at the original 330px
-        */
+        width: clamp(150px, 43vw, 380px);       
     }
     .search-div {
         display: flex;
@@ -126,7 +121,7 @@ header {
     }
     .header-icon-openhours {
         display: none;
-    }   
+    }  
     
 }
 
