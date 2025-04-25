@@ -128,8 +128,7 @@
     width: 100%;
 }
 .footer-section-3-container{
-    flex-direction: column;
-    max-width: 1208px;
+    flex-direction: column;    
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -179,9 +178,9 @@ align-items: center;
   }
   @media (width > 767px) {
     .footer-img{
-    height: 80px;
-    min-width: 80px;
-    color: transparent;
+        height: 80px;
+        min-width: 80px;
+        color: transparent;
     }    
     .footer-section1-size{
         padding: 2rem 4rem;
@@ -191,17 +190,16 @@ align-items: center;
         padding: 2rem 4rem;
         gap: 8px;
     }
-    .footer-section-3{
-       justify-content: center;
-    }
+    
     .footer-section-3-container{
         flex-direction: row;
+        
     }
     .footer-section-3-border{
         border-top: none;         /* Ta bort horisontell */
         border-left: 1px solid #ffffff; /* Lägg till vertikal */
         width: 1px;               /* Smal linje */           /* Justera höjd efter behov */
-        margin: 24px auto;        /* Centrerad */
+        margin: 24px;     /* Centrerad */
         opacity: 0.4;
 }
     .footer-flex-change-flex{
